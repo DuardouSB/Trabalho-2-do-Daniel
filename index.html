@@ -3,60 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos Online Gratuitos</title>
+    <title>Monitoramento de Ocupação - Bloco 3</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Cursos Online Gratuitos</h1>
-        <nav>
-            <a href="#">Home</a> | 
-            <a href="#">Cursos</a> | 
-            <a href="#">Sobre Nós</a> | 
-            <a href="#">Contato</a>
-        </nav>
-    </header>
 
-    <div class="search-filters">
-        <input type="text" placeholder="Buscar cursos...">
-        <select>
-            <option value="">Categoria</option>
-            <option value="tecnologia">Tecnologia</option>
-            <option value="saude">Saúde</option>
-            <option value="educacao">Educação</option>
-        </select>
-        <select>
-            <option value="">Nível</option>
-            <option value="iniciantes">Iniciante</option>
-            <option value="intermediario">Intermediário</option>
-            <option value="avancado">Avançado</option>
-        </select>
-        <button>Filtrar</button>
+<div class="header">
+    <h1>Monitoramento de Ocupação - Bloco 3</h1>
+</div>
+
+<div class="environments" id="environments">
+    <div class="environment occupied">
+        Sala de Aula 4<br>
+        <span>Ocupado 🧑‍🎓</span>
     </div>
-
-    <div class="course-grid">
-        <div class="course-card">
-            <h2>Curso de Programação</h2>
-            <p>Aprenda os fundamentos da programação em Python.</p>
-            <img src="curso_programacao.jpg" alt="Imagem do curso de programação" />
-            <p>Duração: 4 semanas</p>
-            <p>Nível: Iniciante</p>
-            <a href="#">Saiba Mais</a>
-        </div>
-        <div class="course-card">
-            <h2>Curso de Saúde Mental</h2>
-            <p>Descubra técnicas para cuidar da sua saúde mental.</p>
-            <img src="curso_saude.jpg" alt="Imagem do curso de saúde mental" />
-            <p>Duração: 3 semanas</p>
-            <p>Nível: Intermediário</p>
-            <a href="#">Saiba Mais</a>
-        </div>
+    <div class="environment free">
+        Laboratório de Informática 1<br>
+        <span>Livre ✅</span>
     </div>
+    <div class="environment maintenance">
+        Sala de Professores<br>
+        <span>Manutenção 🔧</span>
+    </div>
+</div>
 
-    <footer>
-        <p>Links importantes: <a href="#">Termos de uso</a> | <a href="#">Política de privacidade</a></p>
-        <p>Contato: contato@plataforma.com</p>
-        <p>Nota: “Este projeto é apenas ilustrativo. Estas páginas foram desenvolvidas como atividade da Disciplina Programação para Web I.”</p>
-    </footer>
+<script src="script.js"></script>
 </body>
 </html>
