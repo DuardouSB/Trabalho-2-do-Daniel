@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoramento de Ocupação - Bloco 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Monitoramento de Salas - IFCE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="header">
-    <h1>Monitoramento de Ocupação - Bloco 3</h1>
-</div>
-
-<div class="environments" id="environments">
-    <div class="environment occupied">
-        Sala de Aula 4<br>
-        <span>Ocupado 🧑‍🎓</span>
+    <div class="container">
+        <h1>Monitoramento das Salas - Bloco 3</h1>
+        <div class="rooms" id="rooms">
+            <div class="room" id="sala-aula-4" onclick="toggleState('sala-aula-4')">
+                <h2>Sala de Aula 4</h2>
+                <div class="status free">Livre</div>
+            </div>
+            <div class="room" id="laboratorio-informatica-1" onclick="toggleState('laboratorio-informatica-1')">
+                <h2>Laboratório de Informática 1</h2>
+                <div class="status free">Livre</div>
+            </div>
+            <div class="room" id="sala-professores" onclick="toggleState('sala-professores')">
+                <h2>Sala de Professores</h2>
+                <div class="status free">Livre</div>
+            </div>
+        </div>
     </div>
-    <div class="environment free">
-        Laboratório de Informática 1<br>
-        <span>Livre ✅</span>
-    </div>
-    <div class="environment maintenance">
-        Sala de Professores<br>
-        <span>Manutenção 🔧</span>
-    </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
